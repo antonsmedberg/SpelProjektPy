@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9ab41f58-9696-4265-a795-2f4bf58ac8d9" name="Changes" comment="Startskärm spel">
-      <change afterPath="$PROJECT_DIR$/GameOverScreen.py" afterDir="false" />
+    <list default="true" id="9ab41f58-9696-4265-a795-2f4bf58ac8d9" name="Changes" comment="GameOverSkärm">
+      <change afterPath="$PROJECT_DIR$/VictoryScreen.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spaceship.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/StartScreen.py" beforeDir="false" afterPath="$PROJECT_DIR$/StartScreen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameOverScreen.py" beforeDir="false" afterPath="$PROJECT_DIR$/GameOverScreen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StartScreen.py" beforeDir="false" afterPath="$PROJECT_DIR$/MainGame.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +28,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 2
 }]]></component>
@@ -35,6 +42,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.MainGame.executor": "Run",
     "Python.StartScreen.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -53,9 +61,12 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Anton\PycharmProjects\SpelProjektPy" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Anton\PycharmProjects\SpelProjektPy" />
+    </key>
   </component>
   <component name="RunManager">
-    <configuration name="StartScreen" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="MainGame" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="SpelProjektPy" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -69,7 +80,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/StartScreen.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\Anton\PycharmProjects\SpelProjektPy\MainGame.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -80,7 +91,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.StartScreen" />
+        <item itemvalue="Python.MainGame" />
       </list>
     </recent_temporary>
   </component>
@@ -99,7 +110,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1704715322753</updated>
-      <workItem from="1704715329287" duration="4323000" />
+      <workItem from="1704715329287" duration="16213000" />
     </task>
     <task id="LOCAL−00001" summary="Startskärm spel">
       <option name="closed" value="true" />
@@ -115,17 +126,43 @@
       <option name="presentableId" value="LOCAL−00002" />
       <updated>1704718693701</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL−00003" summary="GameOverSkärm">
+      <option name="closed" value="true" />
+      <created>1704721071215</created>
+      <option name="number" value="LOCAL−00003" />
+      <option name="presentableId" value="LOCAL−00003" />
+      <updated>1704721071215</updated>
+    </task>
+    <task id="LOCAL−00004" summary="GameOverSkärm">
+      <option name="closed" value="true" />
+      <created>1704721114198</created>
+      <option name="number" value="LOCAL−00004" />
+      <option name="presentableId" value="LOCAL−00004" />
+      <updated>1704721114198</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Startskärm spel" />
-    <option name="LAST_COMMIT_MESSAGE" value="Startskärm spel" />
+    <MESSAGE value="GameOverSkärm" />
+    <option name="LAST_COMMIT_MESSAGE" value="GameOverSkärm" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/SpelProjektPy$StartScreen.coverage" NAME="StartScreen Coverage Results" MODIFIED="1704720954827" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/SpelProjektPy$StartScreen.coverage" NAME="MainGame Coverage Results" MODIFIED="1704732951113" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
