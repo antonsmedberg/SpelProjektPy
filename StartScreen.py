@@ -2,11 +2,20 @@ import pygame
 import random
 import sys
 
+
+# Initialize Pygame
+pygame.init()
+
 # Skärmkonstanter
 WIDTH, HEIGHT = 800, 600
 BLACK = (0, 0, 0)
 WHITE = (255, 255, 255)
 FONT_SIZE = 30
+
+
+# Create the Window (Screen)
+screen = pygame.display.set_mode((WIDTH, HEIGHT))
+pygame.display.set_caption("Game Start Screen")
 
 
 def start_screen(screen):
@@ -55,3 +64,15 @@ def wait_for_key():
                 waiting = False
 
 # Resten av din kod...
+
+# Call start screen function
+start_screen(screen)
+
+# Game Loop
+running = True
+while running:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            running = False
+
+pygame.quit()
