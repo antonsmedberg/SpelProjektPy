@@ -1,9 +1,9 @@
 import pygame
 import random
 import sys
+from GameOverScreen import game_over_screen
 
-
-# Initialize Pygame
+# Initialiserar Pygame
 pygame.init()
 
 # Skärmkonstanter
@@ -12,26 +12,24 @@ BLACK = (0, 0, 0)
 WHITE = (255, 255, 255)
 FONT_SIZE = 30
 
+# Skapar ett fönster
+main_screen = pygame.display.set_mode((WIDTH, HEIGHT))  # Changed variable name to 'main_screen'
+pygame.display.set_caption("Spelets Startsida")
 
-# Create the Window (Screen)
-screen = pygame.display.set_mode((WIDTH, HEIGHT))
-pygame.display.set_caption("Game Start Screen")
-
-
-def start_screen(screen):
+def start_screen(screen_to_use):
     """
-    Startskärm för spelet.
-    Visar introduktionstext och väntar på tangenttryckning för att starta spelet.
+    Visar startskärmen för spelet.
+    Presenterar introduktionstext och väntar på användarens tangenttryckning för att påbörja spelet.
     """
     font = pygame.font.Font(None, FONT_SIZE)
-    screen.fill(BLACK)
+    screen_to_use.fill(BLACK)  # Changed to 'screen_to_use'
     intro_text = get_intro_text()
 
     y_position = HEIGHT // 4
     for line in intro_text:
         text = font.render(line, True, WHITE)
         text_rect = text.get_rect(center=(WIDTH // 2, y_position))
-        screen.blit(text, text_rect)
+        screen_to_use.blit(text, text_rect)  # Changed to 'screen_to_use'
         y_position += FONT_SIZE
 
     pygame.display.flip()
@@ -40,19 +38,18 @@ def start_screen(screen):
 
 def get_intro_text():
     """
-    Returnerar introduktionstexten för spelet.
+    Skapar och returnerar introduktionstexten för spelet.
     """
     return [
         "Välkommen, Alien Abductor!",
-        # ... Resten av texten ...
+        # ... Fortsättning på texten ...
         "Tryck på valfri tangent för att starta spelet...",
     ]
 
 
 def wait_for_key():
     """
-    Väntar på en tangenttryckning för att fortsätta.
-    Avslutar spelet om QUIT-event inträffar.
+    Väntar på att användaren trycker på en tangent. Avslutar spelet om användaren stänger fönstret.
     """
     waiting = True
     while waiting:
@@ -63,16 +60,28 @@ def wait_for_key():
             elif event.type == pygame.KEYDOWN:
                 waiting = False
 
-# Resten av din kod...
 
-# Call start screen function
-start_screen(screen)
+# Starta startskärmen
+start_screen(main_screen)  # Changed argument to 'main_screen'
 
-# Game Loop
+# Spelvariabler
+score = 0  # Initialiserar poängen
 running = True
+
+# Huvudspelslingan
 while running:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
+        # Här kommer spellogiken
+        # Uppdatera poängen vid behov
 
+    # Kontrollera om spelet är över
+    # if game_over_condition:
+    #     running = False
+
+# Visa game over-skärmen med slutpoängen
+game_over_screen(main_screen, score)  # Updated to use 'main_screen'
+
+# Stänger Pygame
 pygame.quit()
