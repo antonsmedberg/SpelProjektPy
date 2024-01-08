@@ -51,5 +51,5 @@ def wait_for_key():
 # Exempelanvändning
 if __name__ == "__main__":
     pygame.init()
-    screen = pygame.display.set_mode((800, HEIGHT))
-    game_over_screen(screen, 100)  # Exempelpoäng
+    main_screen = pygame.display.set_mode((800, HEIGHT))  # Changed variable name to 'main_screen'
+    game_over_screen(main_screen, 100)  # Exempelpoäng, Changed argument to 'main_screen'
